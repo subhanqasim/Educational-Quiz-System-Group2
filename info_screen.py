@@ -28,7 +28,7 @@ def info_screen(username,email, start_quiz_callback):
         win,
         text=instructions,
         justify="left",
-        wraplength=450,
+        wraplength=550,
         font=APP_FONT,
         bg=BG_COLOR,
         fg=TEXT_COLOR
@@ -39,7 +39,7 @@ def info_screen(username,email, start_quiz_callback):
         text="Start Quiz",
         command=lambda: [win.destroy(), start_quiz_callback(username,email)],
         bg=BTN_COLOR,
-        fg="white",
+        fg="BLACK",
         font=("Arial", 12, "bold"),
         padx=10,
         pady=5
