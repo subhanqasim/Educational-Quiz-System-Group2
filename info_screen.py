@@ -41,6 +41,6 @@ def info_screen(username,email, start_quiz_callback):
         bg=BTN_COLOR,
         fg="BLACK",
         font=("Arial", 12, "bold"),
-        padx=10,
+        padx=15,
         pady=5
     ).pack(pady=10)
