@@ -10,7 +10,7 @@ try:
 except ImportError:
     APP_FONT = ("Arial", 12)
     BG_COLOR = "#FAEBD7"
-    BTN_COLOR = "#1e88e5"
+    BTN_COLOR = "#F0FFFF"
     TEXT_COLOR = "#0d47a1"
 
 USER_DATA_FILE = "user_data.json"
