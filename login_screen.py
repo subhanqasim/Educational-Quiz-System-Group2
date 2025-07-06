@@ -9,7 +9,7 @@ try:
     from style import APP_FONT, BG_COLOR, BTN_COLOR, TEXT_COLOR
 except ImportError:
     APP_FONT = ("Arial", 12)
-    BG_COLOR = "#e3f2fd"
+    BG_COLOR = "#FAEBD7"
     BTN_COLOR = "#1e88e5"
     TEXT_COLOR = "#0d47a1"
 
@@ -19,7 +19,7 @@ def read_user_data():
     try:
         with open(USER_DATA_FILE, "r") as file:
             return json.load(file)
-    except FileNotFoundError:
+    except Error:
         return {}
 
 def write_user_data(data):
@@ -53,7 +53,7 @@ def login_screen(start_quiz_callback):
         else:
             messagebox.showwarning("Login Error", "Invalid email or password")
 
-    tk.Button(window, text="Login", command=proceed, bg=BTN_COLOR, fg="white", font=APP_FONT).pack(pady=20)
+    tk.Button(window, text="Login", command=proceed, bg=BTN_COLOR, fg="aliceblue", font=APP_FONT).pack(pady=20)
     tk.Button(window, text="Sign Up", command=lambda: signup_screen(window, start_quiz_callback), bg="#ff9800", fg="white", font=APP_FONT).pack(pady=5)
     window.mainloop()
 
