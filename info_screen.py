@@ -19,7 +19,7 @@ def info_screen(username,email, start_quiz_callback):
         f"Welcome to the Quiz, {username}!\n\n"
         "Instructions:\n"
         "- The quiz has multiple-choice questions.\n"
-        "- Select one option and click Next.\n"
+        "- You have to select one option and click Next.\n"
         "- You will get your score at the end.\n"
         "- Try to answer all questions to the best of your knowledge.\n"
     )
@@ -28,7 +28,7 @@ def info_screen(username,email, start_quiz_callback):
         win,
         text=instructions,
         justify="left",
-        wraplength=550,
+        wraplength=540,
         font=APP_FONT,
         bg=BG_COLOR,
         fg=TEXT_COLOR
