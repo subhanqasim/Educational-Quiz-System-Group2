@@ -20,7 +20,7 @@ def init_db():
     conn.commit()
     conn.close()
 
-# Insert quiz result into database
+# Save_User_Result_Function
 def save_result(name, email, score, total):
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
