@@ -4,14 +4,14 @@ import tkinter as tk
 try:
     from style import APP_FONT, BG_COLOR, TEXT_COLOR
 except ImportError:
-    APP_FONT = ("Arial", 14)
+    APP_FONT = ("Arial", 19)
     BG_COLOR = "#e0f7fa"
     TEXT_COLOR = "#004d40"
 
 def result_screen(username, score, total):
     win = tk.Toplevel()
-    win.title("Quiz Result")
-    win.geometry("400x250")
+    win.title("Quiz Total Result ")
+    win.geometry("500x250")
     win.configure(bg=BG_COLOR)
 
     tk.Label(
