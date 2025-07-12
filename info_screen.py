@@ -4,10 +4,10 @@ import tkinter as tk
 try:
     from style import APP_FONT, BG_COLOR, BTN_COLOR, TEXT_COLOR
 except ImportError:
-    APP_FONT = ("Arial", 13)
-    BG_COLOR = "#fff8e1"
-    BTN_COLOR = "#ff9800"
-    TEXT_COLOR = "#4e342e"
+    APP_FONT = ("Calibri", 13)
+    BG_COLOR = "#CCCCFF"
+    BTN_COLOR = "#9FE2BF"
+    TEXT_COLOR = "#999999"
 
 def info_screen(username,email, start_quiz_callback):
     win = tk.Toplevel()
