@@ -1,6 +1,6 @@
 from database import init_db
 init_db()  # Create DB table if not exists
-
+ 
 from login_screen import login_screen
 from quiz_screen import Quiz
 from result_screen import result_screen
