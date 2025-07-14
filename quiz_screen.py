@@ -1,8 +1,7 @@
 import tkinter as tk
 import json
-from database import save_result  # SQLite DB function
+from database import save_result
 
-# Use fallback styles if style.py not found
 try:
     from style import APP_FONT, BG_COLOR, BTN_COLOR, TEXT_COLOR
 except ImportError:
@@ -92,6 +91,5 @@ class Quiz:
             self.load_question()
         else:
             self.window.destroy()
-            # ✅ Save result to database
             save_result(self.username, self.email, self.score, len(self.questions))
             self.show_result_callback(self.username, self.score, len(self.questions))
