@@ -9,13 +9,13 @@ except ImportError:
     TEXT_COLOR = "#004d40"
 
 def result_screen(username, score, total):
-    win = tk.Toplevel()
-    win.title("Quiz Total Result ")
-    win.geometry("500x250")
-    win.configure(bg=BG_COLOR)
+    top = tk.Toplevel()
+    top.title("Quiz Total Result ")
+    top.geometry("500x250")
+    top.configure(bg=BG_COLOR)
 
     tk.Label(
-        win,
+        top,
         text=f"Well done, {username}!",
         font=("Arial", 16, "bold"),
         bg=BG_COLOR,
@@ -23,7 +23,7 @@ def result_screen(username, score, total):
     ).pack(pady=15)
 
     tk.Label(
-        win,
+        top,
         text=f"Your Score: {score} / {total}",
         font=("Arial", 14),
         bg=BG_COLOR,
@@ -31,7 +31,7 @@ def result_screen(username, score, total):
     ).pack(pady=5)
 
     tk.Button(
-        win,
+        top,
         text="Exit",
         command=win.destroy,
         bg="#d32f2f",
