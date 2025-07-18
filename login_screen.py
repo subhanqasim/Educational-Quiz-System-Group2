@@ -8,7 +8,7 @@ import re
 try:
     from style import APP_FONT, BG_COLOR, BTN_COLOR, TEXT_COLOR
 except ImportError:
-    APP_FONT = ("Arial", 12)
+    APP_FONT = ("Arial", 13)
     BG_COLOR = "#FAEBD7"
     BTN_COLOR = "#F0FFFF"
     TEXT_COLOR = "#0d47a1"
@@ -31,7 +31,7 @@ def validate_email(email):
 
 def login_screen(start_quiz_callback):
     window = tk.Tk()
-    window.title("Login")
+    window.title("Login password")
     window.geometry("350x350")
     window.configure(bg=BG_COLOR)
 
@@ -60,7 +60,7 @@ def login_screen(start_quiz_callback):
 def signup_screen(login_window, start_quiz_callback):
     signup_window = tk.Toplevel()
     signup_window.title("Sign Up")
-    signup_window.geometry("350x400")
+    signup_window.geometry("350x500")
     signup_window.configure(bg=BG_COLOR)
 
     tk.Label(signup_window, text="Name", font=APP_FONT, bg=BG_COLOR, fg=TEXT_COLOR).pack(pady=10)
