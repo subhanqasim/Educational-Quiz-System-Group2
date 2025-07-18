@@ -4,7 +4,7 @@ import tkinter as tk
 try:
     from style import APP_FONT, BG_COLOR, BTN_COLOR, TEXT_COLOR
 except ImportError:
-    APP_FONT = ("Calibri", 13)
+    APP_FONT = ("Calibri", 14)
     BG_COLOR = "#CCCCFF"
     BTN_COLOR = "#9FE2BF"
     TEXT_COLOR = "#999999"
@@ -40,7 +40,7 @@ def info_screen(username,email, start_quiz_callback):
         command=lambda: [win.destroy(), start_quiz_callback(username,email)],
         bg=BTN_COLOR,
         fg="BLACK",
-        font=("Arial", 12, "bold"),
+        font=("Arial", 11, "bold"),
         padx=15,
         pady=5
     ).pack(pady=10)
